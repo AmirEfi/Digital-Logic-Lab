@@ -1,0 +1,50 @@
+Running: I:\xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib secureip -o F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/testbench_isim_beh.exe -prj F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/testbench_beh.prj work.testbench 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/regen.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/regfile.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/pcreg.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/mux3.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/mux2.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/imem.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/extimm.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/dmem.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/controller.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/alu.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/adder.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/top.vhd" into library work
+Parsing VHDL file "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/test.vhd" into library work
+Starting static elaboration
+WARNING:HDLCompiler:794 - "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/extimm.vhd" Line 11: Statement might not cover all choices ; 'others' clause recommended
+WARNING:HDLCompiler:794 - "F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/mux3.vhd" Line 15: Statement might not cover all choices ; 'others' clause recommended
+Completed static elaboration
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package env
+Compiling package textio
+Compiling package std_logic_textio
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity pcreg [pcreg_default]
+Compiling architecture behavioral of entity adder [adder_default]
+Compiling architecture behavioral of entity imem [imem_default]
+Compiling architecture behavioral of entity mux2 [\mux2(3)\]
+Compiling architecture behavioral of entity regfile [regfile_default]
+Compiling architecture behavioral of entity extimm [extimm_default]
+Compiling architecture behavioral of entity mux2 [\mux2(8)\]
+Compiling architecture behavioral of entity mux3 [\mux3(8)\]
+Compiling architecture behavioral of entity alu [alu_default]
+Compiling architecture behavioral of entity dmem [dmem_default]
+Compiling architecture behavioral of entity regen [regen_default]
+Compiling architecture behavioral of entity controller [controller_default]
+Compiling architecture behavioral of entity top [top_default]
+Compiling architecture behavior of entity testbench
+Time Resolution for simulation is 1ps.
+Waiting for 6 sub-compilation(s) to finish...
+Compiled 35 VHDL Units
+Built simulation executable F:/zabtdars/azmanteghi/hw7/98243038_mohammadtahani/SingleCycleprocessor/testbench_isim_beh.exe
+Fuse Memory Usage: 37900 KB
+Fuse CPU Usage: 624 ms
