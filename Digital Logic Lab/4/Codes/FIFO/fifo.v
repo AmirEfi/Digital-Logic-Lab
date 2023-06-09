@@ -25,7 +25,7 @@ module fifo (
     input clk,
     output [9:0] out
 );
-/*   reg [7:0]  count = 0; 
+   reg [7:0]  count = 0; 
 	reg [9:0]  fifo [15:0];
 	reg [7:0]  readCounter = 0, writeCounter = 0;
 	
@@ -64,7 +64,7 @@ module fifo (
 				readCounter=0;
 
 
-		end */
+		end 
 		
 		core_fifo cor (
   .clk(clk), // input clk
