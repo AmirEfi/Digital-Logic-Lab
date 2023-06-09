@@ -28,7 +28,7 @@ module ram(
     output [9:0] out
     );
    
-  /* reg [9:0] memory [255:0];
+   reg [9:0] memory [255:0];
 	 always @(posedge clk,posedge rst)
 	 begin
 		if (rst)
@@ -41,7 +41,7 @@ module ram(
 				else if (!we & en)
 					out <= memory[addr];
 			end
-	 end*/
+	 end
 
 	 
 	 ram_core ram_core1 (
