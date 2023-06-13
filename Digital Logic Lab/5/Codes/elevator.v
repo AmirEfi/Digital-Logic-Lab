@@ -55,7 +55,6 @@ module elevator(
 	
 	reg[1:4] F, D, U ;
 	reg FDU234, FDU123, FDU34, FDU12, FDU1, FDU2, FDU3, FDU4 ;
-	//reg[4:0] state, next;
 	
 	always @(F1,F2,F3,F4,D1,D2,D3,D4,U1,U2,U3,U4) begin
 	
@@ -83,11 +82,6 @@ module elevator(
 		open=0;
 	end
 	
-
-	
-	//reg[4:0] state, next;
-	//FlipFlop ff (.clk(clk), .reset(reset), .d(next), .q(state));
-	
 	always @(posedge clk,posedge reset)
 		if (reset) state <= S1N ;
 		else state <= next ;
@@ -95,7 +89,6 @@ module elevator(
 	always @(negedge clk)begin
 		case(state)
 		
-			//Neutral Elevator:
 			
 			S1N:		if(U1) next = S1PickUp ;
 						else if(FDU234) next = UpTo2 ;
@@ -113,7 +106,6 @@ module elevator(
 			S4N:		if(D4)	next = S4PickUp ;
 						else if(FDU123) next = DownTo3 ;
 			
-			//Playeing With Elevator's Door:
 			
 			S1PickUp:	if(FDU234) next = UpTo2 ;
 			
@@ -143,8 +135,6 @@ module elevator(
 			S3PickUp:	if(FDU4)		next = UpTo4 ;
 							else if(FDU12) next = DownTo2;
 			
-			
-			//Moving Elevator:
 			
 			UpTo2:	if((F2 || U2) & S2)	next = S2InRushUp ;
 						else if(FDU34 & S2) next = UpTo3 ;
