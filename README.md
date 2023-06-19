@@ -3,7 +3,7 @@
 
 This repository is for my DL Lab course. 
 
-I had 6 HWs for this course as you can see:
+I had 6 homework for this course as you can see:
 
 HW1: 16-bit Ripple Carry adder & 16-bit Carry Look Ahead adder
 
